@@ -44,6 +44,6 @@ struct DiscoverView: ConnectedView {
 
 struct DiscoverView_Previews: PreviewProvider {
     static var previews: some View {
-        DiscoverView()
+        DiscoverView().environmentObject(store)
     }
 }
