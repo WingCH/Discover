@@ -12,4 +12,8 @@ struct QuotesActions {
     struct SetQuote: Action {
         let quotes: [String]
     }
+
+    struct RemoveQuote: Action {
+        let quote: String
+    }
 }

@@ -6,10 +6,39 @@
 //
 
 import SwiftUI
+import SwiftUIFlux
 
-struct DiscoverView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct DiscoverView: ConnectedView {
+
+    struct Props {
+        let quotes: [String]
+        let dispatch: DispatchFunction
+    }
+
+    func map(state: AppState, dispatch: @escaping DispatchFunction) -> Props {
+        return Props(quotes: state.quotesState.quote, dispatch: dispatch)
+    }
+
+    func body(props: Props) -> some View {
+        List(props.quotes, id: \.self) { (quote)  in
+            HStack {
+                Text(quote)
+                Spacer()
+                Image(systemName: "trash")
+                    .onTapGesture {
+                        print("remove \(quote)")
+                        props.dispatch(QuotesActions.RemoveQuote(quote: quote))
+                    }
+            }
+        }.onAppear {
+
+            let str = "abcdefghijklmnopqrstuvwxyz"
+            let characterArray = Array(str).map({ s in
+                String(s)
+            })
+
+            props.dispatch(QuotesActions.SetQuote(quotes: characterArray))
+        }
     }
 }
 
