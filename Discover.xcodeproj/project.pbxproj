@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E06736325610D6F009F83B1 /* DiscoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06736225610D6F009F83B1 /* DiscoverApp.swift */; };
-		0E06736525610D6F009F83B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06736425610D6F009F83B1 /* ContentView.swift */; };
 		0E06736725610D71009F83B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E06736625610D71009F83B1 /* Assets.xcassets */; };
 		0E06736A25610D71009F83B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E06736925610D71009F83B1 /* Preview Assets.xcassets */; };
 		0E06737325610EAD009F83B1 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06737225610EAD009F83B1 /* DiscoverView.swift */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		0E06735F25610D6F009F83B1 /* Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E06736225610D6F009F83B1 /* DiscoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverApp.swift; sourceTree = "<group>"; };
-		0E06736425610D6F009F83B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E06736625610D71009F83B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E06736925610D71009F83B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E06736B25610D71009F83B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				0E06736225610D6F009F83B1 /* DiscoverApp.swift */,
-				0E06736425610D6F009F83B1 /* ContentView.swift */,
 				0E06737225610EAD009F83B1 /* DiscoverView.swift */,
 				0E06736625610D71009F83B1 /* Assets.xcassets */,
 				0E06736B25610D71009F83B1 /* Info.plist */,
@@ -215,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E06736525610D6F009F83B1 /* ContentView.swift in Sources */,
 				0E06736325610D6F009F83B1 /* DiscoverApp.swift in Sources */,
 				0E06738A2561238A009F83B1 /* QuotesActions.swift in Sources */,
 				0E067393256132F0009F83B1 /* AppReducer.swift in Sources */,
