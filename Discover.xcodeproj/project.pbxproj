@@ -18,6 +18,7 @@
 		0E06738525612330009F83B1 /* QuotesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06738425612330009F83B1 /* QuotesReducer.swift */; };
 		0E06738A2561238A009F83B1 /* QuotesActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0673892561238A009F83B1 /* QuotesActions.swift */; };
 		0E06738F2561323D009F83B1 /* LoggingMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06738E2561323D009F83B1 /* LoggingMiddleware.swift */; };
+		0E067393256132F0009F83B1 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E067392256132F0009F83B1 /* AppReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		0E06738425612330009F83B1 /* QuotesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesReducer.swift; sourceTree = "<group>"; };
 		0E0673892561238A009F83B1 /* QuotesActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesActions.swift; sourceTree = "<group>"; };
 		0E06738E2561323D009F83B1 /* LoggingMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingMiddleware.swift; sourceTree = "<group>"; };
+		0E067392256132F0009F83B1 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		0E0673832561231C009F83B1 /* reducers */ = {
 			isa = PBXGroup;
 			children = (
+				0E067392256132F0009F83B1 /* AppReducer.swift */,
 				0E06738425612330009F83B1 /* QuotesReducer.swift */,
 			);
 			path = reducers;
@@ -215,6 +218,7 @@
 				0E06736525610D6F009F83B1 /* ContentView.swift in Sources */,
 				0E06736325610D6F009F83B1 /* DiscoverApp.swift in Sources */,
 				0E06738A2561238A009F83B1 /* QuotesActions.swift in Sources */,
+				0E067393256132F0009F83B1 /* AppReducer.swift in Sources */,
 				0E06738125612104009F83B1 /* QuotesState.swift in Sources */,
 				0E06737325610EAD009F83B1 /* DiscoverView.swift in Sources */,
 				0E06737925611D14009F83B1 /* AppState.swift in Sources */,
