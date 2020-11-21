@@ -30,14 +30,6 @@ struct DiscoverView: ConnectedView {
                         props.dispatch(QuotesActions.RemoveQuote(quote: quote))
                     }
             }
-        }.onAppear {
-
-            let str = "abcdefghijklmnopqrstuvwxyz"
-            let characterArray = Array(str).map({ s in
-                String(s)
-            })
-
-            props.dispatch(QuotesActions.SetQuote(quotes: characterArray))
         }
     }
 }
