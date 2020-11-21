@@ -36,6 +36,16 @@ struct DiscoverView: ConnectedView {
 
 struct DiscoverView_Previews: PreviewProvider {
     static var previews: some View {
-        DiscoverView().environmentObject(store)
+        DiscoverView()
+            .environmentObject(store)
+            .onAppear(perform: {
+
+                let str = "abcdefghijklmnopqrstuvwxyz"
+                let characterArray = Array(str).map({ s in
+                    String(s)
+                })
+
+                store.dispatch(action: QuotesActions.SetQuote(quotes: characterArray))
+            })
     }
 }
